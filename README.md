@@ -2,6 +2,9 @@
 
 # 👨🏻‍💻 **Pipe-Testnet-Node-Guide** 👨🏻‍💻
 
+![image](https://github.com/user-attachments/assets/47cbe79e-e6ee-43e2-98cc-2543c524fe08)
+
+
 </div>
 
 # 🖥️ Device/System Requirements 
@@ -77,6 +80,17 @@ EOL'
 sudo mkdir -p /opt/popcache
 sudo mkdir -p /opt/popcache/logs
 ```
+
+
+<div align="center">
+
+# Download the binary 👨🏻‍💻
+
+![Screenshot 2025-05-17 011814](https://github.com/user-attachments/assets/612259db-b1dd-44d3-9f18-924b5bf80140)
+
+
+
+</div>
 
 
 # Download the binary 
