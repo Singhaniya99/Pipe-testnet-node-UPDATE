@@ -113,7 +113,30 @@ sudo mkdir -p /opt/popcache/logs
 </div>
 
 
-*
+* 1. Download the pop binary in your local pc
+
+* 2. Open the termius application and move to SFTP 
+
+* 3. Now, On your right screen - select the VPS which u want to send the file, left screen will be your local disk
+
+* 4. Drag and drop your pop binary file to your Left screen To Right VPS's Home path. 
+
+* 5. Now move & Unrap the pop file with following these commands!
+
+```
+mv ~/pop-v0.3.0-linux-x64.tar.gz /opt/popcache/
+```
+
+```
+cd /opt/popcache/
+```
+
+```
+sudo tar -xzf pop-v0.3.0-linux-x64.tar.gz
+sudo chmod +x ./pop
+chmod 777 pop-v0.3.0-linux-x64.tar.gz
+sudo ln -sf /opt/popcache/pop /usr/local/bin/pop
+```
 
 
 # Set Configuration File
@@ -214,7 +237,65 @@ sudo systemctl start popcache
 ```
 
 
+# Managing Logs ⛓️‍💥
+
+* Check node Status
+
+```
+sudo systemctl status popcache
+```
+
+![Screenshot 2025-05-27 190436](https://github.com/user-attachments/assets/719cce62-977c-4730-856a-c9325d316a09)
 
 
+```
+tail -f /opt/popcache/logs/stdout.log
+```
+
+* This will show something like that👇
+
+![image](https://github.com/user-attachments/assets/e7e2eec0-a2fb-442f-8257-dbd9053c5a4d)
+
+
+
+# Get pop_id & more info
+
+```
+curl -sk https://localhost/metrics | jq . && curl -sk https://localhost/state | jq . && curl -sk https://localhost/health | jq .
+```
+
+![image](https://github.com/user-attachments/assets/46e9cac6-66e8-4e37-83e1-f7dce5e9bb2f)
+
+
+
+# Dashboard
+
+https://dashboard.testnet.pipe.network/node/
+
+* Add your `pop id` at the end of the link to get info about your node-
+
+![Screenshot 2025-05-27 165755](https://github.com/user-attachments/assets/e6454400-a629-4fe8-806d-d0bce416a653)
+
+
+# Stop the service 
+
+```
+sudo systemctl stop popcache
+```
+
+# Next day command for local pc
+
+```
+sudo systemctl restart popcache
+```
+
+
+👉 Join TG for more Updates: https://telegram.me/cryptogg
+
+If U have any issue then open a issue on this repo or Dm me on TG~
+
+Thank U! 👾
+
+Happy Coding💗
 
 
