@@ -124,7 +124,7 @@ sudo mkdir -p /opt/popcache/logs
 * 5. Now move & Unrap the pop file with following these commands!
 
 ```
-mv ~/pop-v0.3.0-linux-x64.tar.gz /opt/popcache/
+sudo mv ~/pop-v0.3.0-linux-x64.tar.gz /opt/popcache/
 ```
 
 ```
@@ -143,7 +143,7 @@ sudo ln -sf /opt/popcache/pop /usr/local/bin/pop
 
 
 ```
-nano config.json
+sudo nano config.json
 ```
 
 ```
