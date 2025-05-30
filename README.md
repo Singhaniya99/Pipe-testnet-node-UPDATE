@@ -290,7 +290,7 @@ sudo systemctl restart popcache
 ```
 
 
-👉 Join TG for more Updates: https://telegram.me/cryptogg
+👉 Join TG for more Updates: https://t.me/+kamRWpadSgc0NWY1
 
 If U have any issue then open a issue on this repo or Dm me on TG~
 
